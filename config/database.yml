@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: postgres
+  pool: 5
+
+development:
+  <<: *default
+  database: shorten_development
+
+test:
+  <<: *default
+  database: shorten_test
+
+production:
+  <<: *default
+  database: shorten_production
+  password: <%= ENV['DATABASE_PASSWORD'] || 'postgres' %>
+  host:     <%= ENV['POSTGRES_PORT_5432_TCP_ADDR'] || 'localhost' %>
+  port:     <%= ENV['POSTGRES_PORT_5432_TCP_PORT'] || '5432' %>
