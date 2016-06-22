@@ -36,9 +36,10 @@ function shorten(form) {
 		data: $(form).serialize(),
 		complete: function(xhr) {
 			if (xhr.status == 201) {
+				alert('创建链接成功\n' + xhr.status + xhr.responseText);
 				$('#shorten_fail').hide();
 				$('#shorten_success').fadeIn();
-				$('#short').href(xhr.responseJSON.short);
+				$('#short').attr('href', xhr.responseJSON.short);
 				$('#short').text(xhr.responseJSON.short);
 			} else if (xhr.status == 0) {
 				// alert('创建账户失败！\n' + xhr.status + xhr.responseText);
