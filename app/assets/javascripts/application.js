@@ -36,7 +36,7 @@ function shorten(form) {
 		data: $(form).serialize(),
 		complete: function(xhr) {
 			if (xhr.status == 201) {
-				alert('创建链接成功\n' + xhr.status + xhr.responseText);
+				// alert('创建链接成功\n' + xhr.status + xhr.responseText);
 				$('#shorten_fail').hide();
 				$('#shorten_success').fadeIn();
 				$('#short').attr('href', xhr.responseJSON.short);
