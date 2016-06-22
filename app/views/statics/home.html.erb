@@ -12,8 +12,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a data-toggle="modal" data-target="#readme" href="#">使用说明</a></li>
-        <li><a href="http://api.urlis.cn" target="_blank">API接口</a></li>
-        <li><a href="http://www.pinewong.com" target="_blank">GitHub开源</a></li>
+        <li><a href="http://api.urlis.cn/docs#/shortens" target="_blank">API接口文档</a></li>
+        <li><a href="https://github.com/pinewong/shorten" target="_blank">GitHub开源</a></li>
         <li><a href="#" data-toggle="modal" data-target="#pinewong">PineWong</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -61,12 +61,16 @@
       <div class="modal-body">
         <p>博客：<a href="http://www.pinewong.com" target="_blank">PineWong's Notes</a></p>
         <p>GitHub：<a href="https://github.com/pinewong" target="_blank">@pinewong</a></p>
-        <p>作品：<a href="http://www.webxx.net" target="_blank">Web学习网</a></p>
+        <p>作品：
+          <a href="http://www.webxx.net" target="_blank">Web学习网</a>
+          <a href="http://urlis.cn" target="_blank">专属链接</a>
+          <a href="http://api.urlis.cn" target="_blank">API库</a>
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" onclick="window.open('http://www.pinewong.com');">前往博客</button>
         <button type="button" class="btn btn-default" onclick="window.open('https://github.com/pinewong');">关注GitHub</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭页面</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
       </div>
     </div>
 
@@ -77,7 +81,7 @@
 
 <!-- 主体 -->
 <article style="padding: 240px 0; background: rgb(30,31,36);">
-  <div class="container bg-info" style="box-shadow: 0 0 6px #6a7c82; border-radius: 4px; text-align: center; border: solid 1px; padding: 20px 20px;">
+  <div class="container bg-info" style="box-shadow: 0 0 6px #ba7c82; border-radius: 4px; text-align: center; border: solid 1px; padding: 40px 20px;">
     <!-- 生成器 -->
     <section>
       <form class="form-inline" id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
@@ -104,8 +108,8 @@
 <!-- 版权 -->
 <footer style="background: #101010; margin-top: 1px; padding: 10px 0; color: #fff; text-align: center;">
   <div class="container"">
-    <p>@ Copyright 2016 URL IS Managed By <a href="http://www.pinewong.com" target="_blank" style="color: #f8504b">PineWong</a></p>
-    <p>源代码公开于 <a href="https://github.com/pinewong/urlis" target="_blank" style="color: #f8504b">GitHub</a></p>
+    <p>@ Copyright 2016 `URL IS` Managed By <a href="http://www.pinewong.com" target="_blank" style="color: #f8504b">PineWong</a></p>
+    <p>源代码公开于 <a href="https://github.com/pinewong/shorten" target="_blank" style="color: #f8504b">GitHub</a></p>
   </div>
 </footer>
 
