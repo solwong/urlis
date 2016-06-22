@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="/" class="size: 20px;">专属链接 - URL IS</a>
+      <a class="navbar-brand" href="/" style="size: 20px; color: #fff;">专属链接 - URL IS</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a data-toggle="modal" data-target="#readme" href="#">使用说明</a></li>
+        <li><a data-toggle="modal" data-target="#readme" href="#">使用说明</a></li>
         <li><a href="http://api.urlis.cn/docs#/shortens" target="_blank">API接口文档</a></li>
         <li><a href="https://github.com/pinewong/shorten" target="_blank">GitHub开源</a></li>
         <li><a href="#" data-toggle="modal" data-target="#pinewong">PineWong</a></li>
@@ -81,7 +81,7 @@
 
 <!-- 主体 -->
 <article style="padding: 240px 0; background: rgb(30,31,36);">
-  <div class="container bg-info" style="box-shadow: 0 0 6px #ba7c82; border-radius: 4px; text-align: center; border: solid 1px; padding: 40px 20px;">
+  <div class="container" style="box-shadow: 0 0 6px #9c27b0; border-radius: 4px; text-align: center; border: solid 1px; background: #673ab7; padding: 40px 20px;">
     <!-- 生成器 -->
     <section>
       <form class="form-inline" id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
@@ -94,13 +94,13 @@
     </section>
 
     <!-- 成功响应 -->
-    <section style="margin-top: 30px; display: none;" id="shorten_success">
-      <p>创建链接成功。你的专属链接：<a href="#" target="_blank" id="short" class="text-success"></a></p>
+    <section style="margin-top: 30px; display: none; color: #fff;" id="shorten_success">
+      <p>创建链接成功。你的专属链接：<a href="#" target="_blank" id="short" style="color: #ffc107;"></a></p>
     </section>
 
     <!-- 失败响应 -->
-    <section style="margin-top: 30px; display: none;" id="shorten_fail">
-      <p>创建链接失败！原因：<span id="shorten_fail_text" class="text-danger"></span></p>
+    <section style="margin-top: 30px; display: none; color: #fff;" id="shorten_fail">
+      <p>创建链接失败！原因：<span id="shorten_fail_text" style="color: #ffc107;"></span></p>
     </section>
   </div>
 </article>
