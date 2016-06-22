@@ -1,0 +1,111 @@
+<!-- 导航 -->
+<nav class="navbar navbar-inverse" style="background: #101010; border-radius: 0; margin-bottom: 1px;">
+  <div class="container">
+    <div class="navbar-header" style="padding-right: 30px;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/" class="size: 20px;">专属链接 - URL IS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a data-toggle="modal" data-target="#readme" href="#">使用说明</a></li>
+        <li><a href="http://api.urlis.cn" target="_blank">API接口</a></li>
+        <li><a href="http://www.pinewong.com" target="_blank">GitHub开源</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#pinewong">PineWong</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 使用说明 -->
+<div id="readme" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">使用说明</h4>
+      </div>
+      <div class="modal-body">
+        <p><span style="font-weight: bold;">URL IS 是一个短链接开源项目。</span></p>
+        <p><span style="font-weight: bold;">短链接：</span>通俗来说，就是将长的URL网址，通过程序计算等方式，转换为简短的网址字符串。</p>
+        <p><span style="font-weight: bold;">短链接意义：</span>让各种带有`?&=`符号的长链接更优雅；防止链接失效（本站允许修改原始链接）。</p>
+        <p><span style="font-weight: bold;">小技巧：</span>如果你新买的服务器，还没有绑定域名，可以直接将你的IP缩短哦！</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PineWong -->
+<div id="pinewong" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">作者相关</h4>
+      </div>
+      <div class="modal-body">
+        <p>博客：<a href="http://www.pinewong.com" target="_blank">PineWong's Notes</a></p>
+        <p>GitHub：<a href="https://github.com/pinewong" target="_blank">@pinewong</a></p>
+        <p>作品：<a href="http://www.webxx.net" target="_blank">Web学习网</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="window.open('http://www.pinewong.com');">前往博客</button>
+        <button type="button" class="btn btn-default" onclick="window.open('https://github.com/pinewong');">关注GitHub</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭页面</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- 主体 -->
+<article style="padding: 240px 0; background: rgb(30,31,36);">
+  <div class="container bg-info" style="box-shadow: 0 0 6px #6a7c82; border-radius: 4px; text-align: center; border: solid 1px; padding: 20px 20px;">
+    <!-- 生成器 -->
+    <section>
+      <form class="form-inline" id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
+        <div class="form-group">
+          <label class="sr-only" for="url" style="font-size: 18px; margin-right: 10px; position: relative; top: 4px;">原始链接:</label>
+          <input type="url" class="form-control" id="url" name="url" style="min-width: 300px; height: 39px; font-size: 18px; border-radius: 4px 0 0 4px;" placeholder="原始链接" />
+          <input class="btn btn-info" type="submit" value="创建链接" style="font-size: 18px; border-radius: 0 4px 4px 0; position: relative; left: -5px;" />
+        </div>
+      </form>
+    </section>
+
+    <!-- 成功响应 -->
+    <section style="margin-top: 30px; display: none;" id="shorten_success">
+      <p>创建链接成功。你的专属链接：<a href="#" target="_blank" id="short" class="text-success"></a></p>
+    </section>
+
+    <!-- 失败响应 -->
+    <section style="margin-top: 30px; display: none;" id="shorten_fail">
+      <p>创建链接失败！原因：<span id="shorten_fail_text" class="text-danger"></span></p>
+    </section>
+  </div>
+</article>
+
+<!-- 版权 -->
+<footer style="background: #101010; margin-top: 1px; padding: 10px 0; color: #fff; text-align: center;">
+  <div class="container"">
+    <p>@ Copyright 2016 URL IS Managed By <a href="http://www.pinewong.com" target="_blank" style="color: #f8504b">PineWong</a></p>
+    <p>源代码公开于 <a href="https://github.com/pinewong/urlis" target="_blank" style="color: #f8504b">GitHub</a></p>
+  </div>
+</footer>
+
