@@ -84,22 +84,24 @@
   <div class="container" style="box-shadow: 0 0 6px #9c27b0; border-radius: 4px; text-align: center; border: solid 1px; background: #673ab7; padding: 40px 20px;">
     <!-- 生成器 -->
     <section>
-      <form class="" id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
+      <form id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
         <!-- <div class="form-group"> -->
+        <p>
         <label class="sr-only" for="url">原始链接:</label>
-        <input type="url" class="col-xs-offset-1 col-xs-7" id="url" name="url" style="border: 0; height: 60px; font-size: 18px; border-radius: 4px 0 0 4px;" placeholder="原始链接" />
-        <input class="btn btn-info col-xs-3" type="submit" value="创建链接" style="font-size: 18px; border-radius: 0 4px 4px 0; height: 60px; letter-spacing: 2px;" />
+        <input type="url" class="col-xs-offset-2 col-xs-6" id="url" name="url" style="border: 0; height: 60px; font-size: 18px; border-radius: 4px 0 0 4px;" placeholder="原始链接" />
+        <input class="btn btn-info col-xs-2" type="submit" value="创建链接" style="font-size: 18px; border-radius: 0 4px 4px 0; height: 60px; letter-spacing: 2px;" />
+        </p>
         <!-- </div> -->
       </form>
     </section>
 
     <!-- 成功响应 -->
-    <section style="margin-top: 30px; display: none; color: #fff;" id="shorten_success">
+    <section style="clear: both; margin-top: 90px; display: none; color: #fff;" id="shorten_success">
       <p>创建链接成功。你的专属链接：<a href="#" target="_blank" id="short" style="color: #ffc107;"></a></p>
     </section>
 
     <!-- 失败响应 -->
-    <section style="margin-top: 30px; display: none; color: #fff;" id="shorten_fail">
+    <section style="clear: both; margin-top: 90px; display: none; color: #fff;" id="shorten_fail">
       <p>创建链接失败！原因：<span id="shorten_fail_text" style="color: #ffc107;"></span></p>
     </section>
   </div>
