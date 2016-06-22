@@ -1,7 +1,7 @@
 <!-- 导航 -->
 <nav class="navbar navbar-inverse" style="background: #101010; border-radius: 0; margin-bottom: 1px;">
   <div class="container">
-    <div class="navbar-header" style="padding-right: 30px;">
+    <div class="navbar-header" style="padding-right: 10px;">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -11,9 +11,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a data-toggle="modal" data-target="#readme" href="#">使用说明</a></li>
-        <li><a href="http://api.urlis.cn/docs#/shortens" target="_blank">API接口文档</a></li>
-        <li><a href="https://github.com/pinewong/shorten" target="_blank">GitHub开源</a></li>
+        <li><a data-toggle="modal" data-target="#readme" href="#">说明</a></li>
+        <li><a href="http://api.urlis.cn/docs#/shortens" target="_blank">API接口</a></li>
+        <li><a href="https://github.com/pinewong/shorten" target="_blank">GitHub</a></li>
         <li><a href="#" data-toggle="modal" data-target="#pinewong">PineWong</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -80,16 +80,16 @@
 
 
 <!-- 主体 -->
-<article style="padding: 240px 0; background: rgb(30,31,36);">
+<article style="padding: 200px 0; background: rgb(30,31,36);">
   <div class="container" style="box-shadow: 0 0 6px #9c27b0; border-radius: 4px; text-align: center; border: solid 1px; background: #673ab7; padding: 40px 20px;">
     <!-- 生成器 -->
     <section>
-      <form class="form-inline" id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
-        <div class="form-group">
-          <label class="sr-only" for="url" style="font-size: 18px; margin-right: 10px; position: relative; top: 4px;">原始链接:</label>
-          <input type="url" class="form-control" id="url" name="url" style="min-width: 300px; height: 39px; font-size: 18px; border-radius: 4px 0 0 4px;" placeholder="原始链接" />
-          <input class="btn btn-info" type="submit" value="创建链接" style="font-size: 18px; border-radius: 0 4px 4px 0; position: relative; left: -5px;" />
-        </div>
+      <form class="" id="shorten_form" role="form" onsubmit="return shorten('#shorten_form')">
+        <!-- <div class="form-group"> -->
+        <label class="sr-only" for="url">原始链接:</label>
+        <input type="url" class="col-xs-offset-1 col-xs-7" id="url" name="url" style="border: 0; height: 60px; font-size: 18px; border-radius: 4px 0 0 4px;" placeholder="原始链接" />
+        <input class="btn btn-info col-xs-3" type="submit" value="创建链接" style="font-size: 18px; border-radius: 0 4px 4px 0; height: 60px; letter-spacing: 2px;" />
+        <!-- </div> -->
       </form>
     </section>
 
