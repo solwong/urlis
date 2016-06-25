@@ -1,5 +1,7 @@
 ## URL IS 定义
 **URL IS(专属链接) 是一个短链接开源项目。**<br />
+**官网：**[http://urlis.cn/](http://urlis.cn/)<br />
+**API地址：**[http://api.urlis.cn/docs/#/shortens](http://api.urlis.cn/docs/#/shortens)<br />
 **短链接：**通俗来说，就是将长的URL网址，通过程序计算等方式，转换为简短的网址字符串。<br />
 **短链接意义：**让各种带有`?&=`符号的长链接更优雅；防止链接失效（本站允许修改原始链接）。<br />
 **小技巧：**如果你新买的服务器，还没有绑定域名，可以直接将你的IP缩短哦！<br />
