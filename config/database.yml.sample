@@ -16,6 +16,6 @@ test:
 production:
   <<: *default
   database: shorten_production
-  password: <%= ENV['DATABASE_PASSWORD'] || 'postgres' %>
-  host:     <%= ENV['POSTGRES_PORT_5432_TCP_ADDR'] || 'localhost' %>
-  port:     <%= ENV['POSTGRES_PORT_5432_TCP_PORT'] || '5432' %>
+  password: 
+  host:     
+  port:     
